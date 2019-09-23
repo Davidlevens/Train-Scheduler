@@ -1,0 +1,52 @@
+.nav-title {
+	font-size: 617%;
+font-family: 'Catamaran', sans-serif;
+	color: white;
+
+}
+
+.container .row {
+    margin-left: 0.30rem;
+    margin-right: 0.26rem;
+}
+
+
+ .input-field label {
+     color: #d32f2f;
+   }
+
+
+  /* label focus color */
+   .input-field input[type=text]:focus + label {
+     color: #d32f2f;
+   }
+
+     /* label underline focus color */
+   .input-field input[type=text]:focus {
+     border-bottom: 1px solid #d32f2f ;
+     box-shadow: 0 1px 0 0 #d32f2f ;
+   }
+
+   .secondaryTitles {
+   	font-family: 'Cairo', sans-serif;
+   	color: white;
+   	font-size: 300%;
+
+   }
+
+   th {
+	letter-spacing: 0.7px;
+  }
+
+ 
+
+  #row1 {
+
+    padding: 2%;
+  }
+
+  #row2 {
+    margin-left: 0rem;
+    margin-right: 0rem;
+    padding: 1%;
+}
