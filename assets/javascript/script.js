@@ -104,7 +104,7 @@ $(document).ready(function () {
 
 
 
-    database.ref().push({
+    database.ref(path).push({
       trainName: trainName,
       destination: destination,
       frequency: frequency,
@@ -124,7 +124,7 @@ $(document).ready(function () {
   // function addDatabaseInfo () {
 
 
-  database.ref().on("child_added", function (childSnapshot) {
+  database.ref(path).on("child_added", function (childSnapshot) {
 
     // 
     
@@ -146,7 +146,7 @@ $(document).ready(function () {
 
 
 
-  database.ref().orderByChild("dateAdded").limitToLast(1).on("child_added", function (snapshot) {
+  database.ref(path).orderByChild("dateAdded").limitToLast(1).on("child_added", function (snapshot) {
 
     var sv = snapshot.val();
 
